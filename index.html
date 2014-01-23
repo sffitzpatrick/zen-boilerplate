@@ -19,7 +19,7 @@
     <meta http-equiv="cleartype" content="on">
 
 
-<style>@import url("css/styles.css");</style>
+<style>@import url("./css/styles.css");</style>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 
@@ -39,41 +39,33 @@
 <div id="page">
 
   <header class="header" id="header" role="banner">
-
-          <a href="/" title="Home" rel="home" class="header__logo" id="logo"><img src="http://localhost:8082/sites/all/themes/mytheme/logo.png" alt="Home" class="header__logo-image" /></a>
-    
-          <div class="header__name-and-slogan" id="name-and-slogan">
+          <a href="/" title="Home" rel="home" class="header__logo" id="logo"><img src="./logo.png" alt="Home" class="header__logo-image" /></a>    
+        <div class="header__name-and-slogan" id="name-and-slogan">
                   <h1 class="header__site-name" id="site-name">
             <a href="/" title="Home" class="header__site-link" rel="home"><span>Zen Boilerplate</span></a>
-          </h1>
-        
-              </div>
-    
-          <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <h2 class="element-invisible">User menu</h2><ul class="links inline clearfix"><li class="menu-2 first"><a href="/user">My account</a></li>
-<li class="menu-15 last"><a href="/user/logout">Log out</a></li>
-</ul>      </nav>
-    
-    
+          </h1>       
+        </div> 
   </header>
 
   <div id="main">
 
     <div id="content" class="column" role="main">
-                  <a id="main-content"></a>
-                        <div class="messages--warning messages warning">
-<h2 class="element-invisible">Warning message</h2>
-For easier theme development, the theme registry is being rebuilt on every page request. It is <em>extremely</em> important to <a href="/admin/appearance/settings/mytheme">turn off this feature</a> on production websites.</div>
-                        
-
-   </div>
+        <a id="main-content"></a>
+    	<h1>Main Page Title</h1>                    
+        <h2>Subtitle</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+		<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+    </div>
 
     <div id="navigation">
-
-              <nav id="main-menu" role="navigation" tabindex="-1">
-          <h2 class="element-invisible">Main menu</h2><ul class="links inline clearfix"><li class="menu-360 first"><a href="/events">Events</a></li>
-<li class="menu-214 last active"><a href="/" class="active">Home</a></li>
-</ul>        </nav>
+     	<nav id="main-menu" role="navigation" tabindex="-1">
+          <h2 class="element-invisible">Main menu</h2>
+          <ul class="links inline clearfix">
+			  <li class="menu-360 first"><a href="/events">Events</a></li>
+			  <li class="menu-214 last active"><a href="/" class="active">Home</a></li>
+		  </ul>       
+		</nav>
       
       
     </div>
@@ -97,20 +89,25 @@ For easier theme development, the theme registry is being rebuilt on every page 
 </div>
 <div id="block-system-navigation" class="block block-system contextual-links-region block-menu last even" role="navigation">
 
-        <h2 class="block__title block-title">Navigation</h2>
-  <ul class="menu"><li class="menu__item is-collapsed first last collapsed"><a href="/node/add" class="menu__link">Add content</a></li>
-</ul>
+        <h2 class="block__title block-title">Text Block</h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 </div>
   </section>
               </aside>
     
   </div>
 
-    <footer id="footer" class="region region-footer">
+  <footer id="footer" class="region region-footer">
+	<nav class="header__secondary-menu" id="secondary-menu" role="navigation">
+		<h2 class="element-invisible">User menu</h2>
+		<ul class="links inline clearfix">
+			<li class="menu-2 first"><a href="/user">My account</a></li>
+			<li class="menu-15 last"><a href="/user/logout">Log out</a></li>
+		</ul>      
+	</nav>
     <div id="block-system-powered-by" class="block block-system contextual-links-region first last odd" role="complementary">
-
-  <span>Powered by <a href="http://drupal.org">Drupal</a></span>
-</div>
+		<p>Footer Text.</p> 
+	</div>
   </footer>
 
 </div>
