@@ -178,7 +178,8 @@ blockquote {
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
- */
+ */ 
+ 
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   @include adjust-font-size-to( $h1-font-size );
@@ -190,12 +191,32 @@ h1 {
 h2 {
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
-  @include trailer(1, $h2-font-size);
+  @include trailer(.6, $h2-font-size);
 }
+
+#main h2, #main h2.block-title {
+  @include adjust-font-size-to($h1-font-size);
+  line-height: 1.125;
+}
+
+.block h2 {
+  margin-top: 0;
+}
+
+h1, h1 a, h2, h2 a, h2.block-title {
+  color: $red;
+  font-family: $proxima-nova-bold;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
 h3 {
   @include adjust-font-size-to( $h3-font-size );
   @include leader(1, $h3-font-size);
   @include trailer(1, $h3-font-size);
+  a {
+    color: $md-grey;
+  }
 }
 h4 {
   @include adjust-font-size-to( $h4-font-size );
@@ -457,12 +478,23 @@ select {
 button,
 html input[type="button"], /* 1 */
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"], a.button {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   @if $legacy-support-for-ie7 {
     *overflow: visible; /* 4 */
   }
+  background: $red;
+  color: #ffffff;
+}
+
+a.button {
+  height: 2.8em;
+  line-height: 2.8em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 18px;
 }
 
 /**

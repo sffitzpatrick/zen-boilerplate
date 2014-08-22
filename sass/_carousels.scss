@@ -1,0 +1,74 @@
+.wysiwyg-area {
+  > h3, > p {
+    margin-top: 0;
+  }
+}
+
+.carousel {
+  
+  overflow: hidden;
+  
+  .clip {
+    width: 100000em;
+  }
+  
+  .field-item {
+    @include inline-block(bottom);
+    width: 140px;
+    height: auto;
+    margin-right: 12px;
+    position: relative;
+  }
+  .field-name-field-format, h3, .field-name-body {
+    display: none;
+    visibility: hidden;
+  }
+  .field-name-field-format {
+    @include adjust-font-size-to($small-font-size);
+  }
+  .cover-image {
+    margin-bottom: -6px;
+  }
+  .teaser {
+    @include box-sizing(border-box);
+    padding: 4px;
+    background-color: $xlt-beige;
+    @include single-transition(opacity, .3s, ease-in-out, 0);
+       .field-name-field-format, h3, .field-name-body {
+      display: block;
+      visibility: visible;
+    }
+    h3, p {
+      margin: 0;
+      line-height: 1.2;
+      @include adjust-font-size-to($base-font-size);
+    }
+  }
+  
+  .field-item:hover .teaser {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  @media all and (min-width: 960px) {
+    .teaser {    
+      opacity: 0;
+      z-index: -10000;
+      position: absolute;
+      bottom: 8px;
+      background-color: $xlt-beige;
+      background-color: rgba(#ffffff, .8);
+    }
+    
+    
+  }
+  
+}
+
+@media all and (min-width: 960px) {
+  .wysiwyg-area {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+body {
+  background: $xlt-beige;
+  color: $dk-grey;
+  padding-top: 18px;
+}
+
+#page {
+  //padding-top: 24px;
+}
+
+#header {
+  height: 130px;
+  margin-bottom: 40px;
+  
+  .region-header {
+    .block {
+      float: right;
+    }
+  }
+  
+}
+
+
+
+#logo {
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  width: 226px;
+}
+
+#footer {
+  margin: 72px 0 40px 0;
+  text-align: center;
+}

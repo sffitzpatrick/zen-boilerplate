@@ -57,15 +57,15 @@ $zen-auto-include-item-base: false;
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-  #main {
+  #page {
     /* Move all the children of #main down to make room. */
-    padding-top: $nav-height;
+    //padding-top: $nav-height;
     position: relative;
   }
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
-    top: 0;
+    top: 82px;
     height: $nav-height;
     width: $zen-grid-width;
   }
@@ -207,4 +207,96 @@ $zen-auto-include-item-base: false;
       @include zen-grid-item(1, 5);
     }
   }
+}
+
+/* a zen-grid framework for building pages in the Drupal UI (blocks, panels, etc) */
+
+$zen-column-count: 4;
+
+
+
+[class*=grid] {
+    @include zen-grid-item-base();
+    padding: 4px;
+    display: block;
+    margin-bottom: 0 !important;
+    width: 100%;
+    float: none;
+    padding: 10px 0;
+    .inner {
+      width: 100%;
+      padding: 20px;
+      @include box-sizing(border-box);
+    }
+}
+
+.grid-clear-right, [class*=grid].last {
+  @include zen-clear(right);
+  padding-right: 0;
+}
+  
+.grid-clear-left, [class*=grid].first {
+  @include zen-clear(left);
+  padding-left: 0;
+}
+
+.grid-clear-both, [class*=grid].last.first {
+  @include zen-clear(both);
+}
+
+
+@media all and (min-width: 767px) {
+
+  .row {
+    display: flex;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  [class*=grid] {
+    display: flex;
+  }
+	.page-panels {
+	    #content {
+	        padding: 0;
+	    }
+	}
+
+	[class*=grid] {
+		padding: 10px;
+	}
+	
+  @each $cols, $pos in (1,1), (1,2), (2,1), (2,2), (3,1), (3,2) {
+    .grid-#{$cols}-#{$pos} {
+      @include zen-grid-item(2, 1);
+    }
+  }
+  
+    @each $cols, $pos in (1,3), (1,4), (2,3), (2,4), (3,3), (3,4) {
+    .grid-#{$cols}-#{$pos} {
+      @include zen-grid-item(2, 3);
+    }
+  }
+  
+  .grid-4-1 {
+    @include zen-grid-item(4,1);
+  }
+  
+      
+}
+
+@media all and (min-width: 960px) {
+  
+  @each $cols, $pos in (1,1), (1,2), (1,3), (1,4),
+                       (2,1), (2,2), (2,3), (2,4),
+                       (3,1), (3,2), (3,3), (3,4),
+                       (4,1) {
+    .grid-#{$cols}-#{$pos} {
+      @include zen-grid-item($cols, $pos);
+    }
+  } 
+  
 }

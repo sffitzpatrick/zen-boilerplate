@@ -1,0 +1,49 @@
+.big-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    @media all and (min-width: 480px) {
+      @include box-sizing(border-box);
+      width: 49%;
+      padding: 0 8px;
+      margin-bottom: 16px;
+      &:nth-child(odd) {
+        padding-left: 0;
+      }
+      &:nth-child(even) {
+        padding-right: 0;
+      }
+    }
+  }
+  .button {
+    display: block;
+    height: auto;
+    line-height: .9;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    background: $lt-grey;
+    @include border-radius(8px);
+    color: $dk-grey;
+    border: 1px solid $lt-grey;
+    border-bottom-width: 3px;
+    @include adjust-font-size-to($small-font-size);
+    @include box-sizing(border-box);
+    &:hover {
+      background: $red;
+      color: #ffffff;
+      border-color: darken($red, 20%);
+      border-bottom-width: 2px;
+    }
+    &::first-line {
+      @include adjust-font-size-to($h2-font-size);
+      margin-bottom: 0;
+      line-height: .9;
+      color: #ffffff;
+    }
+  }
+  
+}

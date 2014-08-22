@@ -59,6 +59,8 @@ $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
+$small-font-size: $h5-font-size;
+
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu
 // and Nimbus Sans fonts are commonly available on Linux systems where the MS
@@ -84,21 +86,40 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
+$proxima-nova: 'ProximaNovaRegular', Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$proxima-nova-semibold: 'ProximaNovaSemibold', Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$proxima-nova-bold: 'ProximaNovaBold', Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$proxima-nova-black: 'ProximaNovaBlack', Helvetica, Arial, "Nimbus Sans L", sans-serif;
+
+
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$base-font-family: $proxima-nova; // The font family set on the html element.
+$font-body:        $proxima-nova;
 $font-monospace:   $courier;
+
 
 
 //
 // Colors, etc.
 //
 
+$xlt-beige: #F2F0EE;
+$lt-beige: #DEDBD6;
+$md-grey: #B4B1AC;
+$dk-grey: #323232;
+$md-grey: #666666;
+$lt-grey: lighten($md-grey, 30%);
+
+$red: #D91E48;
+
+
+
+
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
 
 // The height of the navigation container.
-$nav-height: 3em;
+$nav-height: 48px;
 
 // Tab styling.
 $tabs-container-bg: #fff;

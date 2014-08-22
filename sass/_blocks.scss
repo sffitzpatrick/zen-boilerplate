@@ -1,0 +1,134 @@
+#main .block .inner {
+  background: #ffffff;
+}
+
+.region-header .block {
+  display: inline;
+}
+
+.login-block {
+  margin-right: 10px;
+  a {
+    color: $dk-grey;
+    height: 46px;
+    line-height: 46px;
+    background: darken($lt-beige, 12%);
+    display: block;
+    padding: 0 28px;
+    text-decoration: none;
+    @include single-transition(background-color, .1s, ease-in-out, 0);
+    &:hover {
+      background: $red;
+      color: #ffffff;
+    }
+  }
+}
+
+#block-search-form {
+  
+  background: $lt-beige;
+  padding: 8px 12px;
+  .form-item, #edit-custom-search-paths, .form-actions {
+    /* set up defaults and clear margins */
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-type-textfield {
+    input {
+      border: 1px solid $md-grey;
+      width: 168px;
+      height: 30px;
+    }
+  }
+  
+  #edit-custom-search-paths .form-item {
+    input {
+      //@include element-invisible;
+    }
+  }
+  
+  
+  .form-actions input {
+    -webkit-appearance: none;
+    border: none;
+    background: $red;
+    color: #ffffff;
+  }
+  
+}
+
+.social-icons {
+  svg {
+    path {
+      fill: #666666;
+    }
+    &:hover path {
+      fill: $red;
+    }
+  }
+}
+
+#main .block.aside {
+  .inner {
+    background: $lt-beige;
+  }
+  h2.block-title {
+    color: $dk-grey;
+    @include adjust-font-size-to($h2-font-size);
+    line-height: 1.125;
+    margin-bottom: .5em;
+  }
+  .img-wrapper {
+    margin: auto -20px;
+    overflow: hidden;
+    height: 180px;
+    img.full-bleed {
+
+    }
+    + p {
+      margin-top: .8em;
+    }
+  }
+  
+}
+
+.block.big-slide {
+  .inner {
+    background-color: transparent;
+    position: relative;
+    &:before {
+      content: '';
+      @include background-image(linear-gradient(rgba(#000000,.001), rgba(#000000, .05) 50%, rgba(#000000, .1) 60%, rgba(#000000, .5) 70%, rgba(#000000, .7)));
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    
+  }
+  .teaser {
+    position: absolute;
+    bottom: 18px;
+    color: #f9f9f9;
+    padding-right: 20px; /*equal to parent div's padding, necessary because of absolute pos */
+    h2, p {
+      margin: 0;
+      color: #f9f9f9;
+      font-family: $base-font-family;
+    }
+    .title-prefix {
+      border-bottom: 1px solid rgba(#f9f9f9, .2);
+      @include adjust-font-size-to($small-font-size);
+      text-transform: uppercase;
+      letter-spacing: 1px;      
+    }
+  }
+}
+
+#main .block.no-bg .inner {
+  padding: 0;
+  background: transparent;
+}

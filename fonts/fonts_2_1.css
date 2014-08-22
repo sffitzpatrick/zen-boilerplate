@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'ProximaNovaBlack';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Black-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Black-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Black-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Black-webfont.svg#ProximaNovaBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaBlackItalic';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BlackIt-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BlackIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BlackIt-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BlackIt-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BlackIt-webfont.svg#ProximaNovaBlackItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Bold-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Bold-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Bold-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Bold-webfont.svg#ProximaNovaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaBoldItalic';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BoldIt-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BoldIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BoldIt-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BoldIt-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-BoldIt-webfont.svg#ProximaNovaBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaExtrabold';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Xbold-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Xbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Xbold-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Xbold-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Xbold-webfont.svg#ProximaNovaExtrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaExtraboldItalic';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-XboldIt-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-XboldIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-XboldIt-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-XboldIt-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-XboldIt-webfont.svg#ProximaNovaExtraboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegularItalic';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-RegIt-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-RegIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-RegIt-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-RegIt-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-RegIt-webfont.svg#ProximaNovaRegularItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Light-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Light-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Light-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaLightItalic';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-LightIt-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-LightIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-LightIt-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-LightIt-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-LightIt-webfont.svg#ProximaNovaLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Reg-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Reg-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Sbold-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Sbold-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Sbold-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Sbold-webfont.svg#ProximaNovaSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemiboldItalic';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-SboldIt-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-SboldIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-SboldIt-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-SboldIt-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-SboldIt-webfont.svg#ProximaNovaSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+    {
+    font-family: 'ProximaNovaThin';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Thin-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Thin-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Thin-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-Thin-webfont.svg#ProximaNovaThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaThinItalic';
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-ThinIt-webfont.eot');
+    src: url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-ThinIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-ThinIt-webfont.woff') format('woff'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-ThinIt-webfont.ttf') format('truetype'),
+         url('http://beta.oppl.org/sites/all/themes/oppl_framework/fonts/ProximaNova-ThinIt-webfont.svg#ProximaNovaThinItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
